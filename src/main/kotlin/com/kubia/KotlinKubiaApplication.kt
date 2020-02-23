@@ -11,7 +11,7 @@ import java.net.Inet4Address
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/")
+@RequestMapping("")
 class KotlinKubiaApplication
 {
 
