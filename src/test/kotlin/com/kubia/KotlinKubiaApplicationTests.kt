@@ -1,0 +1,13 @@
+package com.kubia
+
+import org.junit.jupiter.api.Test
+import org.springframework.boot.test.context.SpringBootTest
+
+@SpringBootTest
+class KotlinKubiaApplicationTests {
+
+	@Test
+	fun contextLoads() {
+	}
+
+}
