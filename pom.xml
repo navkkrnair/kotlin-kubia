@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.kubia</groupId>
 	<artifactId>kotlin-kubia</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>kotlin-kubia</name>
 	<description>Kotlin Kibia for Kubernetes</description>
 
