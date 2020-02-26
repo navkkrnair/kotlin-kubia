@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kotlin-kubia
+  labels:
+    name: kotlin-kubia
+spec:
+  containers:
+    - name: kotlin-kubia
+      image: navkkrnair/kotlin-kubia:1.0
+      ports:
+        - containerPort: 8080
+          protocol: TCP
+
