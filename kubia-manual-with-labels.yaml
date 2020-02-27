@@ -1,7 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: kubia
+  name: kubia-with-labels
+  labels:
+    app: kubia
+    rel: beta
 spec:
   containers:
     - name: kotlin-kubia
