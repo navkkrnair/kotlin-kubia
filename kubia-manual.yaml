@@ -6,6 +6,7 @@ spec:
   containers:
     - name: kotlin-kubia
       image: navkkrnair/kotlin-kubia:1.0
+      imagePullPolicy: Always
       ports:
         - containerPort: 8080
           protocol: TCP
