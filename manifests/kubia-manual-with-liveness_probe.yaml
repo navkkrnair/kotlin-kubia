@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubia-with-liveness
+  labels:
+    app: kubia
+    rel: beta
+spec:
+  containers:
+    - name: kotlin-kubia
+      image: navkkrnair/kotlin-kubia:1.0
+      imagePullPolicy: Always
+      livenessProbe:
+        httpGet:
+          path: /actuator/health
+          port: 8080
+        initialDelaySeconds: 15
+      ports:
+        - containerPort: 8080
+          protocol: TCP
+

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubia-service
+  labels:
+    name: kubia-service
+spec:
+    selector:
+      app: kubia
+      rel: beta
+    type: NodePort
+    ports:
+      - port: 8080
+        nodePort: 30080
+        name: http
